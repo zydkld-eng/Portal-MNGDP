@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
@@ -18,13 +18,40 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { getCurrentUser, signOut, redirectToLogin } from "@/lib/auth"
+import { clearSupabaseCookies } from "@/lib/clear-cookies"
 
 
 export default function MNGDPPortal() {
   const router = useRouter()
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [currentView, setCurrentView] = useState<"main" | "systems" | "dashboards">("main")
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  // Check authentication on component mount
+  useEffect(() => {
+    async function checkAuth() {
+      try {
+        const user = await getCurrentUser()
+        if (user) {
+          setIsLoggedIn(true)
+        } else {
+          // If no user, clear any potentially corrupt cookies and redirect
+          clearSupabaseCookies()
+          redirectToLogin()
+        }
+      } catch (error) {
+        console.error('Error checking authentication:', error)
+        // On error, clear cookies and redirect to login
+        clearSupabaseCookies()
+        redirectToLogin()
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    checkAuth()
+  }, [])
 
   const systems = [
     { name: "نظام إدارة المشاريع", icon: Building2, description: "الوصف", href: "#" },
@@ -40,48 +67,23 @@ export default function MNGDPPortal() {
     { name: "لوحة إضافية", icon: Headphones, description: "الوصف" },
   ]
 
-  if (!isLoggedIn) {
+  // Handle logout
+  const handleLogout = async () => {
+    try {
+      await signOut()
+    } catch (error) {
+      console.error('Error signing out:', error)
+    }
+  }
+
+  // Show loading state
+  if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url(/images/login-background.png)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/10" />
-        <Card className="w-full max-w-md mx-4 relative z-10 shadow-2xl bg-secondary/95 backdrop-blur-sm border-secondary/20 opacity-90">
-          <CardHeader className="text-center space-y-6 px-6 py-8">
-            <div className="flex justify-center">
-              <Image
-                src="/images/mngdp-logo.png"
-                alt="شعار البوابة الموحدة"
-                width={80}
-                height={80}
-                className="rounded-full"
-              />
-            </div>
-            <div className="space-y-3">
-              <CardTitle className="text-xl sm:text-2xl font-bold text-secondary-foreground">
-                البوابة الموحدة للأنظمة
-              </CardTitle>
-              <CardDescription className="text-secondary-foreground/80 text-sm sm:text-base leading-relaxed">
-                برنامج تطوير وزارة الحرس الوطني
-              </CardDescription>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-6 px-6 pb-8">
-            <Button
-              className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-              onClick={() => setIsLoggedIn(true)}
-            >
-              تسجيل الدخول بحساب مايكروسوفت
-            </Button>
-          </CardContent>
-        </Card>
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <div className="text-center space-y-4">
+          <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p className="text-muted-foreground">جاري التحميل...</p>
+        </div>
       </div>
     )
   }
@@ -134,7 +136,7 @@ export default function MNGDPPortal() {
               <div className="mr-4 pr-4 border-r border-border">
                 <Button
                   variant="outline"
-                  onClick={() => setIsLoggedIn(false)}
+                  onClick={handleLogout}
                   className="px-4 py-2 text-destructive border-destructive/30 hover:bg-destructive/10 hover:text-destructive"
                 >
                   تسجيل الخروج
@@ -190,7 +192,7 @@ export default function MNGDPPortal() {
                     variant="outline"
                     className="justify-start h-12 px-4 w-full text-destructive border-destructive/30 hover:bg-destructive/10 bg-transparent"
                     onClick={() => {
-                      setIsLoggedIn(false)
+                      handleLogout()
                       setIsMobileMenuOpen(false)
                     }}
                   >
