@@ -66,6 +66,8 @@ export default function MNGDPPortal() {
     checkAuth();
   }, []);
 
+  const currentYear = new Date().getFullYear();
+
   const systems = [
     {
       name: "نظام إدارة المشاريع",
@@ -128,10 +130,11 @@ export default function MNGDPPortal() {
             <div className="flex items-center gap-2 sm:gap-4">
               <Image
                 src="/mngdp-logo.png"
-                alt="شعار البوابة الموحدة"
+                alt="شعار برنامج تطوير وزارة الحرس الوطني"
                 width={40}
                 height={40}
                 className="rounded-full flex-shrink-0 sm:w-[44px] sm:h-[44px]"
+                onClick={() => setCurrentView("main")}
               />
               <div className="text-right">
                 <h1 className="text-sm sm:text-lg font-bold text-primary leading-tight">
@@ -393,26 +396,11 @@ export default function MNGDPPortal() {
         )}
       </main>
 
-      <footer className="bg-secondary text-secondary-foreground mt-16 lg:mt-20">
-        <div className="container mx-auto px-4 lg:px-6 py-8 lg:py-10">
-          <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-6">
-            <div className="flex items-center gap-4">
-              <Image
-                src="/mngdp-logo.png"
-                alt="شعار البوابة الموحدة"
-                width={36}
-                height={36}
-                className="rounded-full flex-shrink-0"
-              />
-              <div className="text-center sm:text-right">
-                <p className="font-semibold text-base lg:text-lg">
-                  البوابة الموحدة لأنظمة برنامج التطوير
-                </p>
-                <p className="text-sm lg:text-base opacity-90 mt-1">
-                  © ٢٠٢٥ جميع الحقوق محفوظة
-                </p>
-              </div>
-            </div>
+      <footer className="bg-secondary text-secondary-foreground py-6 mt-auto">
+        <div className="flex items-center justify-center mx-auto px-4">
+          <div className="text-sm md:text-base font-medium" dir="rtl">
+            جميع الحقوق محفوظة لبرنامج تطوير وزارة الحرس الوطني | ©{" "}
+            {currentYear}
           </div>
         </div>
       </footer>
