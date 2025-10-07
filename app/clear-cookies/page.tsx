@@ -32,8 +32,8 @@ export default function ClearCookiesPage() {
   const handleRedirectToLogin = () => {
     const isLocal = window.location.hostname.includes('localhost')
     const loginUrl = isLocal
-      ? 'http://login.localhost.mngdp.com:3000/login'
-      : 'https://login.mngdp.com/login'
+      ? 'http://login.localhost.mngdp.com:3000/'
+      : 'https://login.mngdp.com/'
     
     window.location.href = loginUrl
   }

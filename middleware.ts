@@ -49,8 +49,8 @@ export async function middleware(request: NextRequest) {
       console.error('Auth error in middleware:', error)
       const isLocal = request.nextUrl.hostname.includes('localhost')
       const loginUrl = isLocal
-        ? 'http://login.localhost.mngdp.com:3000/login'
-        : 'https://login.mngdp.com/login'
+        ? 'http://login.localhost.mngdp.com:3000/'
+        : 'https://login.mngdp.com/'
       
       const currentUrl = request.url
       const redirectUrl = `${loginUrl}?redirect=${encodeURIComponent(currentUrl)}`
@@ -70,8 +70,8 @@ export async function middleware(request: NextRequest) {
       const currentUrl = request.url
       const isLocal = request.nextUrl.hostname.includes('localhost')
       const loginUrl = isLocal
-        ? 'http://login.localhost.mngdp.com:3000/login'
-        : 'https://login.mngdp.com/login'
+        ? 'http://login.localhost.mngdp.com:3000/'
+        : 'https://login.mngdp.com/'
       
       const redirectUrl = `${loginUrl}?redirect=${encodeURIComponent(currentUrl)}`
       return NextResponse.redirect(redirectUrl)
@@ -84,8 +84,8 @@ export async function middleware(request: NextRequest) {
     
     const isLocal = request.nextUrl.hostname.includes('localhost')
     const loginUrl = isLocal
-      ? 'http://login.localhost.mngdp.com:3000/login'
-      : 'https://login.mngdp.com/login'
+      ? 'http://login.localhost.mngdp.com:3000/'
+      : 'https://login.mngdp.com/'
     
     const currentUrl = request.url
     const redirectUrl = `${loginUrl}?redirect=${encodeURIComponent(currentUrl)}`
