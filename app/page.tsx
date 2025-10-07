@@ -11,16 +11,21 @@ import {
 } from "@/components/ui/card";
 import {
   Building2,
-  Database,
+  DollarSign,
   BarChart3,
   Settings,
   Users as UsersIcon, // ⬅️ avoid clash with your user data
   FileText,
   CreditCard,
-  Headphones,
+  ClipboardList,
   ArrowLeft,
   Menu,
   X,
+  ClipboardCheck,
+  Briefcase,
+  Shield,
+  TrendingUp,
+  Target,
 } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -73,7 +78,7 @@ export default function MNGDPPortal() {
       name: "نظام إدارة المشاريع",
       icon: Building2,
       description: "الوصف",
-      href: "#",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/6a835da0-59e3-4021-9ff6-03791d837ff8?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=2dac8b0c-3c22-470c-a5d5-19a8f822c5e0&sourcetime=1759311763362",
     },
     {
       name: "نظام التذاكر",
@@ -81,25 +86,120 @@ export default function MNGDPPortal() {
       description: "الوصف",
       href: "https://tickets.mngdp.com/",
     },
-    { name: "نظام إنجاز", icon: UsersIcon, description: "الوصف", href: "#" },
+    {
+      name: "نظام إنجاز",
+      icon: UsersIcon,
+      description: "الوصف",
+      href: "https://www.mngdp-erp.com/web/login",
+    },
     {
       name: "نظام إدارة المجالس",
       icon: FileText,
       description: "الوصف",
-      href: "#",
+      href: "https://mjls.tech/login/mngdp",
+    },
+    {
+      name: "نظام خطة التفعيل",
+      icon: ClipboardCheck,
+      description: "الوصف",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/21840821-01f4-40da-9f27-f9a9feed1d19?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ef0a2f93-5591-4e56-8de5-d22cb295f174&sourcetime=1758440126051",
+    },
+    {
+      name: "نظام إدارة المحافظ",
+      icon: Shield,
+      description: "الوصف",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/dfe1c119-9e93-4799-ba41-0a42de7e1836?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=a5ceb3ce-8062-4d9c-971c-4d1362c06890&sourcetime=1759312168219",
+    },
+    {
+      name: "نظام المالية لمتابعة المشاريع",
+      icon: CreditCard,
+      description: "الوصف",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/3501ef08-2021-4ad6-93a9-3277877446af?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=1c561904-a8f5-4146-b0b3-5a28effb26da&sourcetime=1759696425694",
+    },
+    {
+      name: "نظام المواءمة للتخطيط والمشروعات",
+      icon: Target,
+      description: "الوصف",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/2833251c-6a2a-46d2-a3e6-2b4d689612d1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ddc19978-60e3-4d06-a355-38efd734b790&sourcetime=1759696442155",
+    },
+    {
+      name: "نظام حلول الأعمال",
+      icon: Briefcase,
+      description: "الوصف",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/ac35b128-ddb3-4c24-831f-9dcd2e3dde55?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=fe2334ab-4643-456d-8fc9-f8c0238fe6cd&sourcetime=1759696472305",
+    },
+    {
+      name: "نظام بصير",
+      icon: BarChart3,
+      description: "الوصف",
+      href: "",
     },
   ];
 
-  const dashboards = [
-    { name: "لوحة المعلومات الخضراء", icon: CreditCard, description: "الوصف" },
-    {
-      name: "لوحة معلومات الخطة التفصيلية",
-      icon: BarChart3,
-      description: "الوصف",
-    },
-    { name: "لوحة خطة التحول", icon: Database, description: "الوصف" },
-    { name: "لوحة إضافية", icon: Headphones, description: "الوصف" },
-  ];
+// Power BI Dashboards
+ const dashboards = [
+  {
+    name: "لوحة معلومات متابعة المشاريع وخطط التقفيل",
+    icon: ClipboardList,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة معلومات الخطة التفصيلية للتحول",
+    icon: BarChart3,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة معلومات إدارة المحافظ",
+    icon: Briefcase,
+
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة تدفق النقد (TDP Cash Flow)",
+    icon: DollarSign,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/h5GRDyoibg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة الموارد (العرض والطلب)",
+    icon: UsersIcon,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة معلومات متابعة الخطة التفصيلية للتحول",
+    icon: BarChart3,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة معلومات مركز إدارة التحول",
+    icon: Settings,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة معلومات مؤشرات التغيير",
+    icon: TrendingUp,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "نموذج التشغيل المستهدف (Target Operating Model)",
+    icon: Target,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+  {
+    name: "لوحة معلومات متابعة خطابات المحافظ والمشاريع",
+    icon: FileText,
+    description: "الوصف",
+    href: "https://app.powerbi.com/links/C_VNYNzw4F?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+  },
+];
 
   // Handle logout
   const handleLogout = async () => {
