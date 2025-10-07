@@ -12,9 +12,11 @@ const cairo = Cairo({
 
 export const metadata: Metadata = {
   title: "البوابة الموحدة",
-  description: "برنامج تطوير وزاارة الحرس الوطني",
+  description: "برنامج تطوير وزارة الحرس الوطني",
     icons: {
     icon: "/mngdp-logo.png",
+    shortcut: "/mngdp-logo.png",
+    apple: "/mngdp-logo.png",
   },
 }
 
