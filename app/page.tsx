@@ -136,70 +136,71 @@ export default function MNGDPPortal() {
     },
   ];
 
-// Power BI Dashboards
- const dashboards = [
-  {
-    name: "لوحة معلومات متابعة المشاريع وخطط التقفيل",
-    icon: ClipboardList,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة معلومات الخطة التفصيلية للتحول",
-    icon: BarChart3,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة معلومات إدارة المحافظ",
-    icon: Briefcase,
+  // Power BI Dashboards
+  const dashboards = [
+    {
+      name: "لوحة معلومات متابعة المشاريع وخطط التفعيل",
+      icon: ClipboardList,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة معلومات متابعة الخطة التفصيلية للتحول",
+      icon: BarChart3,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة معلومات إدارة المحافظ",
+      icon: Briefcase,
 
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة تدفق النقد (TDP Cash Flow)",
-    icon: DollarSign,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/h5GRDyoibg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة الموارد (العرض والطلب)",
-    icon: UsersIcon,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة معلومات متابعة الخطة التفصيلية للتحول",
-    icon: BarChart3,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة معلومات مركز إدارة التحول",
-    icon: Settings,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة معلومات مؤشرات التغيير",
-    icon: TrendingUp,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "نموذج التشغيل المستهدف (Target Operating Model)",
-    icon: Target,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-  {
-    name: "لوحة معلومات متابعة خطابات المحافظ والمشاريع",
-    icon: FileText,
-    description: "الوصف",
-    href: "https://app.powerbi.com/links/C_VNYNzw4F?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-  },
-];
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة تدفق النقد (TDP Cash Flow)",
+      icon: DollarSign,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/h5GRDyoibg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة الموارد (العرض والطلب)",
+      icon: UsersIcon,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة معلومات الخطة التفصيلية للتحول",
+      icon: BarChart3,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+
+    {
+      name: "لوحة معلومات مركز إدارة التحول",
+      icon: Settings,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة معلومات مؤشرات التغيير",
+      icon: TrendingUp,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "نموذج التشغيل المستهدف (Target Operating Model)",
+      icon: Target,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+    {
+      name: "لوحة معلومات متابعة خطابات المحافظ والمشاريع",
+      icon: FileText,
+      description: "الوصف",
+      href: "https://app.powerbi.com/links/C_VNYNzw4F?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+    },
+  ];
 
   // Handle logout
   const handleLogout = async () => {
