@@ -11,9 +11,11 @@ const cairo = Cairo({
 })
 
 export const metadata: Metadata = {
-  title: "دليل أنظمة إم إن جي دي بي",
-  description: "بوابة حديثة لشركة إم إن جي دي بي لتكون دليلاً ونقطة دخول لجميع الأنظمة ولوحات المعلومات",
-  generator: "v0.app",
+  title: "البوابة الموحدة",
+  description: "برنامج تطوير وزاارة الحرس الوطني",
+    icons: {
+    icon: "/mngdp-logo.png",
+  },
 }
 
 export default function RootLayout({
