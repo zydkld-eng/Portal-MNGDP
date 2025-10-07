@@ -357,7 +357,7 @@ export default function MNGDPPortal() {
           <div className="space-y-10">
             <div className="text-center space-y-4">
               <h2 className="text-3xl sm:text-4xl font-bold text-secondary">
-                لوحات التحليلات
+                لوحات المعلومات
               </h2>
               <p className="text-muted-foreground text-lg sm:text-xl">
                 مراقبة الأداء والحصول على رؤى عبر الأقسام
@@ -396,7 +396,7 @@ export default function MNGDPPortal() {
         )}
       </main>
 
-      <footer className="bg-secondary text-secondary-foreground py-6 mt-auto">
+      <footer className="bg-secondary text-secondary-foreground py-6 mt-16 lg:mt-20">
         <div className="flex items-center justify-center mx-auto px-4">
           <div className="text-sm md:text-base font-medium" dir="rtl">
             جميع الحقوق محفوظة لبرنامج تطوير وزارة الحرس الوطني | ©{" "}
