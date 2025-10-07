@@ -95,7 +95,7 @@ export default function MNGDPPortal() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
-                src="/images/mngdp-logo.png"
+                src="/mngdp-logo.png"
                 alt="شعار البوابة الموحدة"
                 width={44}
                 height={44}
@@ -335,7 +335,7 @@ export default function MNGDPPortal() {
           <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-6">
             <div className="flex items-center gap-4">
               <Image
-                src="/images/mngdp-logo.png"
+                src="/mngdp-logo.png"
                 alt="شعار البوابة الموحدة"
                 width={36}
                 height={36}
