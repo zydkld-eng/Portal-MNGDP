@@ -135,7 +135,7 @@ export default function MNGDPPortal() {
               />
               <div className="hidden sm:block">
                 <h1 className="text-md sm:text-lg font-bold text-primary leading-tight">
-                  البوابة الموحدة لأنظمة برنامج التطوير
+                  البوابة الموحدة
                 </h1>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
                   أهلاً وسهلاً، {userName || "جاري التحميل..."}
@@ -248,11 +248,11 @@ export default function MNGDPPortal() {
           <div className="space-y-12">
             <div className="text-center space-y-6 max-w-4xl mx-auto">
               <h2 className="text-xl lg:text-3xl font-bold text-primary leading-tight sm:text-2xl">
-                مرحباً بك في البوابة الموحدة لأنظمة برنامج التطوير
+                مرحباً بك في البوابة الموحدة
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
                 مركزك الرئيسي للوصول إلى جميع أنظمة ولوحات معلومات برنامج
-                التطوير
+                تطوير وزارة الحرس الوطني
               </p>
             </div>
 
