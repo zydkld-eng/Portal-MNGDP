@@ -1,80 +1,112 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import {
   Building2,
   Database,
   BarChart3,
   Settings,
-  Users,
+  Users as UsersIcon, // ⬅️ avoid clash with your user data
   FileText,
   CreditCard,
   Headphones,
   ArrowLeft,
   Menu,
   X,
-} from "lucide-react"
-import Image from "next/image"
-import { useRouter } from "next/navigation"
-import { getCurrentUser, signOut, redirectToLogin } from "@/lib/auth"
-import { clearSupabaseCookies } from "@/lib/clear-cookies"
-
+} from "lucide-react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import {
+  getCurrentUser,
+  getUserProfile,
+  signOut,
+  redirectToLogin,
+} from "@/lib/auth"; // ⬅️ add getUserProfile
+import { clearSupabaseCookies } from "@/lib/clear-cookies";
 
 export default function MNGDPPortal() {
-  const router = useRouter()
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
-  const [currentView, setCurrentView] = useState<"main" | "systems" | "dashboards">("main")
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const router = useRouter();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentView, setCurrentView] = useState<
+    "main" | "systems" | "dashboards"
+  >("main");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [userName, setUserName] = useState<string>(""); // ⬅️ add
 
-  // Check authentication on component mount
   useEffect(() => {
     async function checkAuth() {
       try {
-        const user = await getCurrentUser()
+        const user = await getCurrentUser();
         if (user) {
-          setIsLoggedIn(true)
+          setIsLoggedIn(true);
+          // ⬅️ fetch profile name
+          const profile = await getUserProfile(user.id);
+          setUserName(profile?.name || profile?.full_name || "المستخدم");
         } else {
-          // If no user, clear any potentially corrupt cookies and redirect
-          clearSupabaseCookies()
-          redirectToLogin()
+          clearSupabaseCookies();
+          redirectToLogin();
         }
       } catch (error) {
-        console.error('Error checking authentication:', error)
-        // On error, clear cookies and redirect to login
-        clearSupabaseCookies()
-        redirectToLogin()
+        console.error("Error checking authentication:", error);
+        clearSupabaseCookies();
+        redirectToLogin();
       } finally {
-        setIsLoading(false)
+        setIsLoading(false);
       }
     }
-    checkAuth()
-  }, [])
+    checkAuth();
+  }, []);
 
   const systems = [
-    { name: "نظام إدارة المشاريع", icon: Building2, description: "الوصف", href: "#" },
-    { name: "نظام التذاكر", icon: Settings, description: "الوصف", href: "https://tickets.mngdp.com/" },
-    { name: "نظام إنجاز", icon: Users, description: "الوصف", href: "#" },
-    { name: "نظام إدارة المجالس", icon: FileText, description: "الوصف", href: "#" },
-  ]
+    {
+      name: "نظام إدارة المشاريع",
+      icon: Building2,
+      description: "الوصف",
+      href: "#",
+    },
+    {
+      name: "نظام التذاكر",
+      icon: Settings,
+      description: "الوصف",
+      href: "https://tickets.mngdp.com/",
+    },
+    { name: "نظام إنجاز", icon: UsersIcon, description: "الوصف", href: "#" },
+    {
+      name: "نظام إدارة المجالس",
+      icon: FileText,
+      description: "الوصف",
+      href: "#",
+    },
+  ];
 
   const dashboards = [
     { name: "لوحة المعلومات الخضراء", icon: CreditCard, description: "الوصف" },
-    { name: "لوحة معلومات الخطة التفصيلية", icon: BarChart3, description: "الوصف" },
+    {
+      name: "لوحة معلومات الخطة التفصيلية",
+      icon: BarChart3,
+      description: "الوصف",
+    },
     { name: "لوحة خطة التحول", icon: Database, description: "الوصف" },
     { name: "لوحة إضافية", icon: Headphones, description: "الوصف" },
-  ]
+  ];
 
   // Handle logout
   const handleLogout = async () => {
     try {
-      await signOut()
+      await signOut();
     } catch (error) {
-      console.error('Error signing out:', error)
+      console.error("Error signing out:", error);
     }
-  }
+  };
 
   // Show loading state
   if (isLoading) {
@@ -85,7 +117,7 @@ export default function MNGDPPortal() {
           <p className="text-muted-foreground">جاري التحميل...</p>
         </div>
       </div>
-    )
+    );
   }
 
   return (
@@ -105,7 +137,9 @@ export default function MNGDPPortal() {
                 <h1 className="text-md sm:text-lg font-bold text-primary leading-tight">
                   البوابة الموحدة لأنظمة برنامج التطوير
                 </h1>
-                <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">دليل الأنظمة ولوحات المعلومات</p>
+                <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+                  أهلاً وسهلاً، {userName || "جاري التحميل..."}
+                </p>
               </div>
             </div>
 
@@ -150,7 +184,11 @@ export default function MNGDPPortal() {
               className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </Button>
           </div>
 
@@ -161,8 +199,8 @@ export default function MNGDPPortal() {
                   variant={currentView === "main" ? "default" : "ghost"}
                   className="justify-start h-12 px-4"
                   onClick={() => {
-                    setCurrentView("main")
-                    setIsMobileMenuOpen(false)
+                    setCurrentView("main");
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   الرئيسية
@@ -171,8 +209,8 @@ export default function MNGDPPortal() {
                   variant={currentView === "systems" ? "default" : "ghost"}
                   className="justify-start h-12 px-4"
                   onClick={() => {
-                    setCurrentView("systems")
-                    setIsMobileMenuOpen(false)
+                    setCurrentView("systems");
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   الأنظمة
@@ -181,8 +219,8 @@ export default function MNGDPPortal() {
                   variant={currentView === "dashboards" ? "default" : "ghost"}
                   className="justify-start h-12 px-4"
                   onClick={() => {
-                    setCurrentView("dashboards")
-                    setIsMobileMenuOpen(false)
+                    setCurrentView("dashboards");
+                    setIsMobileMenuOpen(false);
                   }}
                 >
                   لوحات المعلومات
@@ -192,8 +230,8 @@ export default function MNGDPPortal() {
                     variant="outline"
                     className="justify-start h-12 px-4 w-full text-destructive border-destructive/30 hover:bg-destructive/10 bg-transparent"
                     onClick={() => {
-                      handleLogout()
-                      setIsMobileMenuOpen(false)
+                      handleLogout();
+                      setIsMobileMenuOpen(false);
                     }}
                   >
                     تسجيل الخروج
@@ -213,7 +251,8 @@ export default function MNGDPPortal() {
                 مرحباً بك في البوابة الموحدة لأنظمة برنامج التطوير
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-                مركزك الرئيسي للوصول إلى جميع أنظمة ولوحات معلومات برنامج التطوير
+                مركزك الرئيسي للوصول إلى جميع أنظمة ولوحات معلومات برنامج
+                التطوير
               </p>
             </div>
 
@@ -226,12 +265,16 @@ export default function MNGDPPortal() {
                   <div className="mx-auto w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                     <Settings className="w-10 h-10 text-primary" />
                   </div>
-                  <CardTitle className="text-xl lg:text-2xl text-primary mb-4">الأنظمة</CardTitle>
+                  <CardTitle className="text-xl lg:text-2xl text-primary mb-4">
+                    الأنظمة
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center p-8 pt-0">
                   <div className="flex items-center justify-center text-primary group-hover:-translate-x-2 transition-transform">
                     <ArrowLeft className="w-5 h-5 ml-2" />
-                    <span className="text-base lg:text-lg font-medium">استكشاف الأنظمة</span>
+                    <span className="text-base lg:text-lg font-medium">
+                      استكشاف الأنظمة
+                    </span>
                   </div>
                 </CardContent>
               </Card>
@@ -244,12 +287,16 @@ export default function MNGDPPortal() {
                   <div className="mx-auto w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
                     <BarChart3 className="w-10 h-10 text-secondary" />
                   </div>
-                  <CardTitle className="text-xl lg:text-2xl text-secondary mb-4">لوحات المعلومات</CardTitle>
+                  <CardTitle className="text-xl lg:text-2xl text-secondary mb-4">
+                    لوحات المعلومات
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center p-8 pt-0">
                   <div className="flex items-center justify-center text-secondary group-hover:-translate-x-2 transition-transform">
                     <ArrowLeft className="w-5 h-5 ml-2" />
-                    <span className="text-base lg:text-lg font-medium">عرض لوحات المعلومات</span>
+                    <span className="text-base lg:text-lg font-medium">
+                      عرض لوحات المعلومات
+                    </span>
                   </div>
                 </CardContent>
               </Card>
@@ -260,8 +307,12 @@ export default function MNGDPPortal() {
         {currentView === "systems" && (
           <div className="space-y-10">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-bold text-primary">أنظمة الأعمال</h2>
-              <p className="text-muted-foreground text-lg sm:text-xl">الوصول وإدارة عمليات أعمالك الأساسية</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary">
+                أنظمة الأعمال
+              </h2>
+              <p className="text-muted-foreground text-lg sm:text-xl">
+                الوصول وإدارة عمليات أعمالك الأساسية
+              </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {systems.map((system, index) => (
@@ -275,7 +326,9 @@ export default function MNGDPPortal() {
                         <system.icon className="w-7 h-7 text-primary" />
                       </div>
                       <div className="min-w-0 flex-1 space-y-2">
-                        <CardTitle className="text-lg sm:text-xl leading-tight">{system.name}</CardTitle>
+                        <CardTitle className="text-lg sm:text-xl leading-tight">
+                          {system.name}
+                        </CardTitle>
                         <CardDescription className="text-sm sm:text-base leading-relaxed">
                           {system.description}
                         </CardDescription>
@@ -283,7 +336,11 @@ export default function MNGDPPortal() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 pt-0">
-                    <Button onClick={() => router.push(system.href)} className="w-full h-12 bg-transparent text-base font-medium" variant="outline">
+                    <Button
+                      onClick={() => router.push(system.href)}
+                      className="w-full h-12 bg-transparent text-base font-medium"
+                      variant="outline"
+                    >
                       الوصول إلى النظام
                     </Button>
                   </CardContent>
@@ -296,8 +353,12 @@ export default function MNGDPPortal() {
         {currentView === "dashboards" && (
           <div className="space-y-10">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-bold text-secondary">لوحات التحليلات</h2>
-              <p className="text-muted-foreground text-lg sm:text-xl">مراقبة الأداء والحصول على رؤى عبر الأقسام</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-secondary">
+                لوحات التحليلات
+              </h2>
+              <p className="text-muted-foreground text-lg sm:text-xl">
+                مراقبة الأداء والحصول على رؤى عبر الأقسام
+              </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {dashboards.map((dashboard, index) => (
@@ -311,7 +372,9 @@ export default function MNGDPPortal() {
                         <dashboard.icon className="w-7 h-7 text-secondary" />
                       </div>
                       <div className="min-w-0 flex-1 space-y-2">
-                        <CardTitle className="text-lg sm:text-xl leading-tight">{dashboard.name}</CardTitle>
+                        <CardTitle className="text-lg sm:text-xl leading-tight">
+                          {dashboard.name}
+                        </CardTitle>
                         <CardDescription className="text-sm sm:text-base leading-relaxed">
                           {dashboard.description}
                         </CardDescription>
@@ -342,13 +405,17 @@ export default function MNGDPPortal() {
                 className="rounded-full flex-shrink-0"
               />
               <div className="text-center sm:text-right">
-                <p className="font-semibold text-base lg:text-lg">البوابة الموحدة لأنظمة برنامج التطوير</p>
-                <p className="text-sm lg:text-base opacity-90 mt-1">© ٢٠٢٥ جميع الحقوق محفوظة</p>
+                <p className="font-semibold text-base lg:text-lg">
+                  البوابة الموحدة لأنظمة برنامج التطوير
+                </p>
+                <p className="text-sm lg:text-base opacity-90 mt-1">
+                  © ٢٠٢٥ جميع الحقوق محفوظة
+                </p>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
