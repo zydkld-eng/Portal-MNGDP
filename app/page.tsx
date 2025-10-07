@@ -461,7 +461,7 @@ export default function MNGDPPortal() {
                 لوحات المعلومات
               </h2>
               <p className="text-muted-foreground text-lg sm:text-xl">
-                مراقبة الأداء والحصول على رؤى عبر الأقسام
+                تحليل الأداء ومتابعة التقدم عبر المبادرات والمشاريع
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
