@@ -125,16 +125,16 @@ export default function MNGDPPortal() {
       <header className="border-b bg-card shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 lg:px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4">
               <Image
                 src="/mngdp-logo.png"
                 alt="شعار البوابة الموحدة"
-                width={44}
-                height={44}
-                className="rounded-full flex-shrink-0"
+                width={40}
+                height={40}
+                className="rounded-full flex-shrink-0 sm:w-[44px] sm:h-[44px]"
               />
-              <div className="hidden sm:block">
-                <h1 className="text-md sm:text-lg font-bold text-primary leading-tight">
+              <div className="text-right">
+                <h1 className="text-sm sm:text-lg font-bold text-primary leading-tight">
                   البوابة الموحدة
                 </h1>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
@@ -251,8 +251,8 @@ export default function MNGDPPortal() {
                 مرحباً بك في البوابة الموحدة
               </h2>
               <p className="text-md sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-                مركزك الرئيسي للوصول إلى جميع أنظمة ولوحات معلومات برنامج
-                تطوير وزارة الحرس الوطني
+                مركزك الرئيسي للوصول إلى جميع أنظمة ولوحات معلومات برنامج تطوير
+                وزارة الحرس الوطني
               </p>
             </div>
 
