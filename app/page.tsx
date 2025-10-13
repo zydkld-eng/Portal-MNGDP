@@ -443,7 +443,7 @@ export default function MNGDPPortal() {
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full h-12 bg-transparent text-base font-medium"
+                      className="w-full h-12 text-base font-medium text-primary hover:bg-primary hover:text-white hover:border-primary"
                     >
                       <a
                         href={system.href}
