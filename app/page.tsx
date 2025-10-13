@@ -441,11 +441,17 @@ export default function MNGDPPortal() {
                   </CardHeader>
                   <CardContent className="p-6 pt-0">
                     <Button
-                      onClick={() => router.push(system.href)}
-                      className="w-full h-12 bg-transparent text-base font-medium"
+                      asChild
                       variant="outline"
+                      className="w-full h-12 bg-transparent text-base font-medium"
                     >
-                      الوصول إلى النظام
+                      <a
+                        href={system.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        الوصول إلى النظام
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -486,8 +492,18 @@ export default function MNGDPPortal() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 pt-0">
-                    <Button className="w-full h-12 bg-secondary hover:bg-secondary/90 text-secondary-foreground text-base font-medium">
-                      عرض لوحة المعلومات
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full h-12 bg-transparent text-base font-medium"
+                    >
+                      <a
+                        href={dashboard.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        عرض لوحة المعلومات
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
