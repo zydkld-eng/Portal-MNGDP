@@ -71,6 +71,11 @@ export default function MNGDPPortal() {
     checkAuth();
   }, []);
 
+  useEffect(() => {
+    // Scroll to top smoothly whenever the view changes
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentView]);
+
   const currentYear = new Date().getFullYear();
 
   const systems = [
