@@ -352,7 +352,7 @@ export default function MNGDPPortal() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 lg:px-6 py-8 lg:py-12">
+      <main className="flex-grow container mx-auto px-4 lg:px-6 py-8 lg:py-12">
         {currentView === "main" && (
           <div className="space-y-12">
             <div className="text-center space-y-6 max-w-4xl mx-auto">
