@@ -229,7 +229,7 @@ export default function MNGDPPortal() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-background">
       <header className="border-b bg-card shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 lg:px-6 py-4">
           <div className="flex items-center justify-between">
