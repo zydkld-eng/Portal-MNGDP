@@ -106,7 +106,7 @@ export default function MNGDPPortal() {
     {
       name: "نظام خطة التفعيل",
       icon: ClipboardCheck,
-      description: "نظام لمتابعة سيرعمل مشاريع التفعيل بشكل مباشر وفعّال ",
+      description: "نظام لمتابعة سير عمل مشاريع التفعيل بشكل مباشر وفعّال ",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/21840821-01f4-40da-9f27-f9a9feed1d19?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ef0a2f93-5591-4e56-8de5-d22cb295f174&sourcetime=1758440126051",
     },
     {
@@ -144,66 +144,66 @@ export default function MNGDPPortal() {
   // Power BI Dashboards
   const dashboards = [
     {
-      name: "لوحة معلومات متابعة المشاريع وخطط التفعيل",
+      name: "National Guard Report Pack Long",
       icon: ClipboardList,
-      description: "الوصف",
+      description: "لوحة معلومات تعرض الجدول الزمني للمشاريع، والمخرجات، ورُزم العمل، والمشاريع المستقبلية، والمخاطر، ومشاريع التفعيل",
       href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة معلومات متابعة الخطة التفصيلية للتحول",
+      name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan",
       icon: BarChart3,
-      description: "الوصف",
-      href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      description: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية.",
+      href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة معلومات إدارة المحافظ",
+      name: "لوحة معلومات الإدارة العامة للمحافظ",
       icon: Briefcase,
 
-      description: "الوصف",
+      description: "لوحة معلومات لمتابعة بيانات المشاريع، رزم العمل، المهام، المخاطر، المخرجات، الموافقات، والدروس المستفادة",
       href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة تدفق النقد (TDP Cash Flow)",
-      icon: DollarSign,
-      description: "الوصف",
-      href: "https://app.powerbi.com/links/h5GRDyoibg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      name: "لوحة معلومات متابعة مشاريع خطط التفعيل",
+      icon: BarChart3,
+      description: "لوحة  معلومات تفاعلية لعرض ومتابعة سير عمل مشاريع التفعيل",
+      href: "https://app.powerbi.com/links/20AGKY-Vn0?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare&bookmarkGuid=bbfb8166-6240-45ca-945f-2771d6df310",
     },
     {
-      name: "لوحة الموارد (العرض والطلب)",
+      name: "Supply & Demand Resources",
       icon: UsersIcon,
-      description: "الوصف",
+      description: "لوحة معلومات لمتابعة وتوازن العرض والطلب على الموارد، وتحليل توفرها مقابل احتياجات المشاريع",
       href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة معلومات الخطة التفصيلية للتحول",
-      icon: BarChart3,
+      name: "لوحة معلومات الخطة التفصيلية للتحول - Live Transformation Detailed Plan Live",
+      icon: DollarSign,
       description: "الوصف",
-      href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
     },
 
     {
-      name: "لوحة معلومات مركز إدارة التحول",
+      name: "لوحة معلومات مركز إدارة التحول - Transformation Management Centre",
       icon: Settings,
-      description: "الوصف",
+      description: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
       href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة معلومات مؤشرات التغيير",
+      name: "لوحة معلومات إدراة التغيير  - Change",
       icon: TrendingUp,
-      description: "الوصف",
+      description: "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
       href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "نموذج التشغيل المستهدف (Target Operating Model)",
+      name: "النموذج التشغيلي المستهدف  - Tareget Operating Model",
       icon: Target,
-      description: "الوصف",
+      description: "لوحة معلومات تعرض النموذج التشغيلي على المستوى المؤسسي وتقيس أدائه بشكل دقيق",
       href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة معلومات متابعة خطابات المحافظ والمشاريع",
+      name: "لوحة معلومات المعاملات الإدارية",
       icon: FileText,
-      description: "الوصف",
-      href: "https://app.powerbi.com/links/C_VNYNzw4F?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      description: "لوحة متابعة حالة المعاملات الإدارية لنواب المدير العام التنفيذي",
+      href: "https://app.powerbi.com/links/5vFP_vb8vg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
   ];
 
