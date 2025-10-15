@@ -82,25 +82,29 @@ export default function MNGDPPortal() {
     {
       name: "نظام إدارة المشاريع",
       icon: Building2,
-      description: "نظام يهدف إلى إدارة المشاريع ومتابعتها بشكل مؤتمت، يتيح لمدير المشروع رفع الطلبات اللازمة وتتبع التقدم حتى إتمام المشروع",
+      description:
+        "نظام يهدف إلى إدارة المشاريع ومتابعتها بشكل مؤتمت، يتيح لمدير المشروع رفع الطلبات اللازمة وتتبع التقدم حتى إتمام المشروع",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/6a835da0-59e3-4021-9ff6-03791d837ff8?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=2dac8b0c-3c22-470c-a5d5-19a8f822c5e0&sourcetime=1759311763362",
     },
     {
       name: "نظام التذاكر",
       icon: Settings,
-      description: "نظام يتيح رفع التذاكر ومتابعتها وتوجيهها تلقائيًا إلى الإدارة المختصة لمعالجتها",
+      description:
+        "نظام يتيح رفع التذاكر ومتابعتها وتوجيهها تلقائيًا إلى الإدارة المختصة لمعالجتها",
       href: "https://tickets.mngdp.com/",
     },
     {
       name: "نظام إنجاز",
       icon: UsersIcon,
-      description: "نظام لإدارة عمليات الموارد البشرية، يتيح للموظفين تقديم الإجازات والطلبات المختلفة، ويهدف إلى تسهيل الإجراءات الإدارية ورفع كفاءة العمل المؤسسي",
+      description:
+        "نظام لإدارة عمليات الموارد البشرية، يتيح للموظفين تقديم الإجازات والطلبات المختلفة، ويهدف إلى تسهيل الإجراءات الإدارية ورفع كفاءة العمل المؤسسي",
       href: "https://www.mngdp-erp.com/web/login",
     },
     {
       name: "نظام إدارة المجالس",
       icon: FileText,
-      description: "نظام لتنظيم وإدارة المجالس واللجان وفرق العمل، وتسهيل تنسيق الاجتماعات وتوزيع المهام بفعالية",
+      description:
+        "نظام لتنظيم وإدارة المجالس واللجان وفرق العمل، وتسهيل تنسيق الاجتماعات وتوزيع المهام بفعالية",
       href: "https://mjls.tech/login/mngdp",
     },
     {
@@ -112,13 +116,15 @@ export default function MNGDPPortal() {
     {
       name: "نظام الإدارة العامة للمحافظ",
       icon: Shield,
-      description: "نظام لإدارة المحافظ يضم أقسام رئيسية تشمل: التحكم، إدارة المخاطر، البوابات المرحلية، والتخطيط وإدارة الموارد",
+      description:
+        "نظام لإدارة المحافظ يضم أقسام رئيسية تشمل: التحكم، إدارة المخاطر، البوابات المرحلية، والتخطيط وإدارة الموارد",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/dfe1c119-9e93-4799-ba41-0a42de7e1836?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=a5ceb3ce-8062-4d9c-971c-4d1362c06890&sourcetime=1759312168219",
     },
     {
       name: "نظام المالية لمتابعة المشاريع",
       icon: CreditCard,
-      description: "نظام لمتابعة الجوانب المالية ومخرجات المشاريع، بما يسهم في تحسين الرقابة المالية ودقة التقارير",
+      description:
+        "نظام لمتابعة الجوانب المالية ومخرجات المشاريع، بما يسهم في تحسين الرقابة المالية ودقة التقارير",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/3501ef08-2021-4ad6-93a9-3277877446af?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=1c561904-a8f5-4146-b0b3-5a28effb26da&sourcetime=1759696425694",
     },
     {
@@ -130,13 +136,15 @@ export default function MNGDPPortal() {
     {
       name: "نظام حلول الأعمال",
       icon: Briefcase,
-      description: "نظام يعرض بيانات المشاريع ويساعد على تتبع التذاكر ومتابعة سير العمل ",
+      description:
+        "نظام يعرض بيانات المشاريع ويساعد على تتبع التذاكر ومتابعة سير العمل ",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/ac35b128-ddb3-4c24-831f-9dcd2e3dde55?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=fe2334ab-4643-456d-8fc9-f8c0238fe6cd&sourcetime=1759696472305",
     },
     {
       name: "نظام بصير",
       icon: BarChart3,
-      description: "نظام لمتابعة مؤشرات الأداء الرئيسية و رصد الفجوات و تسجيل الإنجازات الخاصة بالأداء ",
+      description:
+        "نظام لمتابعة مؤشرات الأداء الرئيسية و رصد الفجوات و تسجيل الإنجازات الخاصة بالأداء ",
       href: "",
     },
   ];
@@ -146,20 +154,23 @@ export default function MNGDPPortal() {
     {
       name: "National Guard Report Pack Long",
       icon: ClipboardList,
-      description: "لوحة معلومات تعرض الجدول الزمني للمشاريع، والمخرجات، ورُزم العمل، والمشاريع المستقبلية، والمخاطر، ومشاريع التفعيل",
+      description:
+        "لوحة معلومات تعرض الجدول الزمني للمشاريع، والمخرجات، ورُزم العمل، والمشاريع المستقبلية، والمخاطر، ومشاريع التفعيل",
       href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan",
       icon: BarChart3,
-      description: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية.",
+      description:
+        "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية.",
       href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
       name: "لوحة معلومات الإدارة العامة للمحافظ",
       icon: Briefcase,
 
-      description: "لوحة معلومات لمتابعة بيانات المشاريع، رزم العمل، المهام، المخاطر، المخرجات، الموافقات، والدروس المستفادة",
+      description:
+        "لوحة معلومات لمتابعة بيانات المشاريع، رزم العمل، المهام، المخاطر، المخرجات، الموافقات، والدروس المستفادة",
       href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
@@ -171,38 +182,44 @@ export default function MNGDPPortal() {
     {
       name: "Supply & Demand Resources",
       icon: UsersIcon,
-      description: "لوحة معلومات لمتابعة وتوازن العرض والطلب على الموارد، وتحليل توفرها مقابل احتياجات المشاريع",
+      description:
+        "لوحة معلومات لمتابعة وتوازن العرض والطلب على الموارد، وتحليل توفرها مقابل احتياجات المشاريع",
       href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Live Transformation Detailed Plan Live",
       icon: DollarSign,
-      description: "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
+      description:
+        "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
       href: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
     },
 
     {
       name: "لوحة معلومات مركز إدارة التحول - Transformation Management Centre",
       icon: Settings,
-      description: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
+      description:
+        "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
       href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
       name: "لوحة معلومات إدراة التغيير  - Change",
       icon: TrendingUp,
-      description: "لوحة معلومات توضح مؤشرات التغيير على مستوى الإدارات، وأثر تغيير البرامج على القطاعات، ودرجة تحمل الإدارات، بشكل مترابط يدعم التقييم واتخاذ القرار",
+      description:
+        "لوحة معلومات توضح مؤشرات التغيير على مستوى الإدارات، وأثر تغيير البرامج على القطاعات، ودرجة تحمل الإدارات، بشكل مترابط يدعم التقييم واتخاذ القرار",
       href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
       name: "النموذج التشغيلي المستهدف  - Tareget Operating Model",
       icon: Target,
-      description: "لوحة معلومات تعرض النموذج التشغيلي على المستوى المؤسسي وتقيس أدائه بشكل دقيق",
+      description:
+        "لوحة معلومات تعرض النموذج التشغيلي على المستوى المؤسسي وتقيس أدائه بشكل دقيق",
       href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
       name: "لوحة معلومات المعاملات الإدارية",
       icon: FileText,
-      description: "لوحة متابعة حالة المعاملات الإدارية لنواب المدير العام التنفيذي",
+      description:
+        "لوحة متابعة حالة المعاملات الإدارية لنواب المدير العام التنفيذي",
       href: "https://app.powerbi.com/links/5vFP_vb8vg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
   ];
@@ -520,9 +537,12 @@ export default function MNGDPPortal() {
 
       <footer className="bg-secondary text-secondary-foreground py-6 mt-16 lg:mt-20">
         <div className="flex items-center justify-center mx-auto px-4">
-          <div className="text-sm md:text-base font-medium" dir="rtl">
-            جميع الحقوق محفوظة لبرنامج تطوير وزارة الحرس الوطني | ©{" "}
-            {currentYear}
+          <div
+            className="text-sm md:text-base font-medium text-center"
+            dir="rtl"
+          >
+            <div>جميع الحقوق محفوظة لبرنامج تطوير وزارة الحرس الوطني</div>
+            <div>© {currentYear}</div>
           </div>
         </div>
       </footer>
