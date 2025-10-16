@@ -162,7 +162,7 @@ export default function MNGDPPortal() {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan",
       icon: BarChart3,
       description:
-        "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية.",
+        "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية",
       href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
@@ -187,7 +187,7 @@ export default function MNGDPPortal() {
       href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
-      name: "لوحة معلومات الخطة التفصيلية للتحول - Live Transformation Detailed Plan Live",
+      name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan Live",
       icon: DollarSign,
       description:
         "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
