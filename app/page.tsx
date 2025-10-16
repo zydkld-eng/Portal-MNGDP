@@ -191,7 +191,7 @@ export default function MNGDPPortal() {
       icon: DollarSign,
       description:
         "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
-      href: "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
+      href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
 
     {
