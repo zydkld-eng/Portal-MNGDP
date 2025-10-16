@@ -190,7 +190,7 @@ export default function MNGDPPortal() {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Live Transformation Detailed Plan Live",
       icon: DollarSign,
       description:
-        "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
+        "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
       href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
 
@@ -198,7 +198,7 @@ export default function MNGDPPortal() {
       name: "لوحة معلومات مركز إدارة التحول - Transformation Management Centre",
       icon: Settings,
       description:
-        "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
+        "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
       href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
     },
     {
