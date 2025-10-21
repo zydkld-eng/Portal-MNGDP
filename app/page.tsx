@@ -56,7 +56,9 @@ export default function MNGDPPortal() {
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [currentView, setCurrentView] = useState<"main" | "systems" | "dashboards">("main");
+  const [currentView, setCurrentView] = useState<
+    "main" | "systems" | "dashboards"
+  >("main");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [userName, setUserName] = useState<string>(""); // ⬅️ add
 
@@ -99,8 +101,7 @@ export default function MNGDPPortal() {
       icon: Building2,
       description:
         "نظام يهدف إلى إدارة المشاريع ومتابعتها بشكل مؤتمت، يتيح لمدير المشروع رفع الطلبات اللازمة وتتبع التقدم حتى إتمام المشروع",
-      href:
-        "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/6a835da0-59e3-4021-9ff6-03791d837ff8?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=2dac8b0c-3c22-470c-a5d5-19a8f822c5e0&sourcetime=1759311763362",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/6a835da0-59e3-4021-9ff6-03791d837ff8?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=2dac8b0c-3c22-470c-a5d5-19a8f822c5e0&sourcetime=1759311763362",
       beneficiary: "مدراء المشاريع",
     },
     {
@@ -131,8 +132,7 @@ export default function MNGDPPortal() {
       name: "نظام خطة التفعيل",
       icon: ClipboardCheck,
       description: "نظام لمتابعة سير عمل مشاريع التفعيل بشكل مباشر وفعّال ",
-      href:
-        "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/21840821-01f4-40da-9f27-f9a9feed1d19?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ef0a2f93-5591-4e56-8de5-d22cb295f174&sourcetime=1758440126051",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/21840821-01f4-40da-9f27-f9a9feed1d19?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ef0a2f93-5591-4e56-8de5-d22cb295f174&sourcetime=1758440126051",
       beneficiary: "مدراء مشاريع التفعيل",
     },
     {
@@ -140,8 +140,7 @@ export default function MNGDPPortal() {
       icon: Shield,
       description:
         "نظام لإدارة المحافظ يضم أقسام رئيسية تشمل: التحكم، إدارة المخاطر، البوابات المرحلية، والتخطيط وإدارة الموارد",
-      href:
-        "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/dfe1c119-9e93-4799-ba41-0a42de7e1836?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=a5ceb3ce-8062-4d9c-971c-4d1362c06890&sourcetime=1759312168219",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/dfe1c119-9e93-4799-ba41-0a42de7e1836?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=a5ceb3ce-8062-4d9c-971c-4d1362c06890&sourcetime=1759312168219",
       beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
     },
     {
@@ -149,16 +148,14 @@ export default function MNGDPPortal() {
       icon: CreditCard,
       description:
         "نظام لمتابعة الجوانب المالية ومخرجات المشاريع، بما يسهم في تحسين الرقابة المالية ودقة التقارير",
-      href:
-        "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/3501ef08-2021-4ad6-93a9-3277877446af?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=1c561904-a8f5-4146-b0b3-5a28effb26da&sourcetime=1759696425694",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/3501ef08-2021-4ad6-93a9-3277877446af?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=1c561904-a8f5-4146-b0b3-5a28effb26da&sourcetime=1759696425694",
       beneficiary: "أعضاء فريق الادارة المالية",
     },
     {
       name: "نظام الموائمة للتخطيط والمشتريات",
       icon: Target,
       description: "أعضاء فريق ادارة المشتريات",
-      href:
-        "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/2833251c-6a2a-46d2-a3e6-2b4d689612d1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ddc19978-60e3-4d06-a355-38efd734b790&sourcetime=1759696442155",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/2833251c-6a2a-46d2-a3e6-2b4d689612d1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ddc19978-60e3-4d06-a355-38efd734b790&sourcetime=1759696442155",
       beneficiary: "إدارة التخطيط",
     },
     {
@@ -166,8 +163,7 @@ export default function MNGDPPortal() {
       icon: Briefcase,
       description:
         "نظام يعرض بيانات المشاريع ويساعد على تتبع التذاكر ومتابعة سير العمل ",
-      href:
-        "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/ac35b128-ddb3-4c24-831f-9dcd2e3dde55?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=fe2334ab-4643-456d-8fc9-f8c0238fe6cd&sourcetime=1759696472305",
+      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/ac35b128-ddb3-4c24-831f-9dcd2e3dde55?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=fe2334ab-4643-456d-8fc9-f8c0238fe6cd&sourcetime=1759696472305",
       beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
     },
     {
@@ -187,8 +183,7 @@ export default function MNGDPPortal() {
       icon: ClipboardList,
       description:
         "لوحة معلومات تعرض الجدول الزمني للمشاريع، والمخرجات، ورُزم العمل، والمشاريع المستقبلية، والمخاطر، ومشاريع التفعيل",
-      href:
-        "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
     },
     {
@@ -196,8 +191,7 @@ export default function MNGDPPortal() {
       icon: BarChart3,
       description:
         "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية",
-      href:
-        "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
     },
     {
@@ -205,16 +199,14 @@ export default function MNGDPPortal() {
       icon: Briefcase,
       description:
         "لوحة معلومات لمتابعة بيانات المشاريع، رزم العمل، المهام، المخاطر، المخرجات، الموافقات، والدروس المستفادة",
-      href:
-        "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة العامة للمحافظ",
     },
     {
       name: "لوحة معلومات متابعة مشاريع خطط التفعيل",
       icon: BarChart3,
       description: "لوحة  معلومات تفاعلية لعرض ومتابعة سير عمل مشاريع التفعيل",
-      href:
-        "https://app.powerbi.com/links/20AGKY-Vn0?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare&bookmarkGuid=bbfb8166-6240-45ca-945f-2771d6df310",
+      href: "https://app.powerbi.com/links/20AGKY-Vn0?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare&bookmarkGuid=bbfb8166-6240-45ca-945f-2771d6df310",
       beneficiary: "جميع منسوبي البرنامج",
     },
     {
@@ -222,8 +214,7 @@ export default function MNGDPPortal() {
       icon: UsersIcon,
       description:
         "لوحة معلومات لمتابعة وتوازن العرض والطلب على الموارد، وتحليل توفرها مقابل احتياجات المشاريع",
-      href:
-        "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
     },
     {
@@ -231,8 +222,7 @@ export default function MNGDPPortal() {
       icon: DollarSign,
       description:
         "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
-      href:
-        "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
     },
     {
@@ -240,8 +230,7 @@ export default function MNGDPPortal() {
       icon: Settings,
       description:
         "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
-      href:
-        "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
     },
     {
@@ -249,8 +238,7 @@ export default function MNGDPPortal() {
       icon: TrendingUp,
       description:
         "لوحة معلومات توضح مؤشرات التغيير على مستوى الإدارات، وأثر تغيير البرامج على القطاعات، ودرجة تحمل الإدارات، بشكل مترابط يدعم التقييم واتخاذ القرار",
-      href:
-        "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
     },
     {
@@ -258,8 +246,7 @@ export default function MNGDPPortal() {
       icon: Target,
       description:
         "لوحة معلومات تعرض النموذج التشغيلي على المستوى المؤسسي وتقيس أدائه بشكل دقيق",
-      href:
-        "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
     },
     {
@@ -267,8 +254,7 @@ export default function MNGDPPortal() {
       icon: FileText,
       description:
         "لوحة متابعة حالة المعاملات الإدارية لنواب المدير العام التنفيذي",
-      href:
-        "https://app.powerbi.com/links/5vFP_vb8vg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
+      href: "https://app.powerbi.com/links/5vFP_vb8vg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة التنفيذية للبرنامج",
     },
   ];
@@ -359,7 +345,11 @@ export default function MNGDPPortal() {
               className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              {isMobileMenuOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </Button>
           </div>
 
@@ -501,13 +491,16 @@ export default function MNGDPPortal() {
                           {system.name}
                         </CardTitle>
                         <CardDescription className="text-sm sm:text-base leading-relaxed">
+                          <span className="font-medium">الوصف:</span>{" "}
                           {system.description}
                         </CardDescription>
 
                         {/* المستفيد */}
                         {system.beneficiary && (
                           <div className="mt-3 flex items-center gap-2">
-                            <span className="text-xs text-muted-foreground">المستفيدين:</span>
+                            <span className="text-xs text-muted-foreground">
+                              المستفيدين:
+                            </span>
                             <Badge>{system.beneficiary}</Badge>
                           </div>
                         )}
@@ -561,13 +554,16 @@ export default function MNGDPPortal() {
                           {dashboard.name}
                         </CardTitle>
                         <CardDescription className="text-sm sm:text-base leading-relaxed">
+                          <span className="font-medium">الوصف:</span>{" "}
                           {dashboard.description}
                         </CardDescription>
 
                         {/* المستفيد */}
                         {dashboard.beneficiary && (
                           <div className="mt-3 flex items-center gap-2">
-                            <span className="text-xs text-muted-foreground">المستفيد:</span>
+                            <span className="text-xs text-muted-foreground">
+                              المستفيد:
+                            </span>
                             <Badge>{dashboard.beneficiary}</Badge>
                           </div>
                         )}
@@ -598,7 +594,10 @@ export default function MNGDPPortal() {
 
       <footer className="bg-secondary text-secondary-foreground py-6 mt-16 lg:mt-20">
         <div className="flex items-center justify-center mx-auto px-4">
-          <div className="text-sm md:text-base font-medium text-center" dir="rtl">
+          <div
+            className="text-sm md:text-base font-medium text-center"
+            dir="rtl"
+          >
             <div>جميع الحقوق محفوظة لبرنامج تطوير وزارة الحرس الوطني</div>
             <div>© {currentYear}</div>
           </div>
