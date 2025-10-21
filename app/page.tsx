@@ -497,7 +497,7 @@ export default function MNGDPPortal() {
 
                         {/* المستفيد */}
                         {system.beneficiary && (
-                          <div className="mt-3 flex items-center gap-2">
+                          <div className="mt-3 flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 text-center sm:text-right">
                             <span className="text-xs text-muted-foreground">
                               المستفيدين:
                             </span>
@@ -560,7 +560,7 @@ export default function MNGDPPortal() {
 
                         {/* المستفيد */}
                         {dashboard.beneficiary && (
-                          <div className="mt-3 flex items-center gap-2">
+                          <div className="mt-3 flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-2 text-center sm:text-right">
                             <span className="text-xs text-muted-foreground">
                               المستفيد:
                             </span>
