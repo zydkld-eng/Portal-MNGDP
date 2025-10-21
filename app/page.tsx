@@ -475,11 +475,11 @@ export default function MNGDPPortal() {
                 الوصول وإدارة عمليات أعمالك الأساسية
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto items-stretch">
               {systems.map((system, index) => (
                 <Card
                   key={index}
-                  className="group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+                  className="group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] h-full flex flex-col"
                 >
                   <CardHeader className="p-6">
                     <div className="flex items-start gap-5">
@@ -507,7 +507,7 @@ export default function MNGDPPortal() {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6 pt-0">
+                  <CardContent className="p-6 pt-0 mt-auto">
                     <Button
                       asChild
                       variant="outline"
@@ -538,11 +538,11 @@ export default function MNGDPPortal() {
                 تحليل الأداء ومتابعة التقدم عبر المبادرات والمشاريع
               </p>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto items-stretch">
               {dashboards.map((dashboard, index) => (
                 <Card
                   key={index}
-                  className="group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
+                  className="group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] h-full flex flex-col"
                 >
                   <CardHeader className="p-6">
                     <div className="flex items-start gap-5">
@@ -570,7 +570,7 @@ export default function MNGDPPortal() {
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent className="p-6 pt-0">
+                  <CardContent className="p-6 pt-0 mt-auto">
                     <Button
                       asChild
                       variant="outline"
