@@ -469,7 +469,7 @@ export default function MNGDPPortal() {
           <div className="space-y-10">
             <div className="text-center space-y-4">
               <h2 className="text-3xl sm:text-4xl font-bold text-primary">
-                أنظمة الأعمال
+                الأنظمة
               </h2>
               <p className="text-muted-foreground text-lg sm:text-xl">
                 الوصول وإدارة عمليات أعمالك الأساسية
