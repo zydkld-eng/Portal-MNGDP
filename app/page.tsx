@@ -141,7 +141,7 @@ export default function MNGDPPortal() {
       description:
         "نظام لإدارة المحافظ يضم أقسام رئيسية تشمل: التحكم، إدارة المخاطر، البوابات المرحلية، والتخطيط وإدارة الموارد",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/dfe1c119-9e93-4799-ba41-0a42de7e1836?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=a5ceb3ce-8062-4d9c-971c-4d1362c06890&sourcetime=1759312168219",
-      beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
+      beneficiary: "الإدارة العامة للمحافظ",
     },
     {
       name: "نظام المالية لمتابعة المشاريع",
@@ -164,7 +164,7 @@ export default function MNGDPPortal() {
       description:
         "نظام يعرض بيانات المشاريع ويساعد على تتبع التذاكر ومتابعة سير العمل ",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/ac35b128-ddb3-4c24-831f-9dcd2e3dde55?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=fe2334ab-4643-456d-8fc9-f8c0238fe6cd&sourcetime=1759696472305",
-      beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
+      beneficiary: "الإدارة العامة للمحافظ",
     },
     {
       name: "نظام بصير",
@@ -184,7 +184,7 @@ export default function MNGDPPortal() {
       description:
         "لوحة معلومات تعرض الجدول الزمني للمشاريع، والمخرجات، ورُزم العمل، والمشاريع المستقبلية، والمخاطر، ومشاريع التفعيل",
       href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-      beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
+      beneficiary: "الإدارة العامة للمحافظ",
     },
     {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan",
@@ -215,7 +215,7 @@ export default function MNGDPPortal() {
       description:
         "لوحة معلومات لمتابعة وتوازن العرض والطلب على الموارد، وتحليل توفرها مقابل احتياجات المشاريع",
       href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-      beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
+      beneficiary: "الإدارة العامة للمحافظ",
     },
     {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan Live",
@@ -223,7 +223,7 @@ export default function MNGDPPortal() {
       description:
         "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
       href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
-      beneficiary: "أعضاء فريق الادارة العامة للمحافظ",
+      beneficiary: "الإدارة العامة للمحافظ",
     },
     {
       name: "لوحة معلومات مركز إدارة التحول - Transformation Management Centre",
