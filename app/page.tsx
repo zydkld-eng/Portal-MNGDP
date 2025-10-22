@@ -172,7 +172,7 @@ export default function MNGDPPortal() {
       description:
         "نظام لمتابعة مؤشرات الأداء الرئيسية و رصد الفجوات و تسجيل الإنجازات الخاصة بالأداء ",
       href: "",
-      beneficiary: "جميع منسوبي البرنامج",
+      beneficiary: "إدارة الاداء",
     },
   ];
 
