@@ -149,12 +149,12 @@ export default function MNGDPPortal() {
       description:
         "نظام لمتابعة الجوانب المالية ومخرجات المشاريع، بما يسهم في تحسين الرقابة المالية ودقة التقارير",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/3501ef08-2021-4ad6-93a9-3277877446af?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=1c561904-a8f5-4146-b0b3-5a28effb26da&sourcetime=1759696425694",
-      beneficiary: "أعضاء فريق الادارة المالية",
+      beneficiary: "الإدارة المالية",
     },
     {
       name: "نظام الموائمة للتخطيط والمشتريات",
       icon: Target,
-      description: "أعضاء فريق ادارة المشتريات",
+      description: "إدارة المشتريات",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/2833251c-6a2a-46d2-a3e6-2b4d689612d1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ddc19978-60e3-4d06-a355-38efd734b790&sourcetime=1759696442155",
       beneficiary: "أعضاء فريق ادارة المشتريات",
     },
