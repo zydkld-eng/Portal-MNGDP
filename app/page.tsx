@@ -154,9 +154,9 @@ export default function MNGDPPortal() {
     {
       name: "نظام الموائمة للتخطيط والمشتريات",
       icon: Target,
-      description: "إدارة المشتريات",
+      description: "نظام يهدف إلى مواءمة المشتريات والتخطيط من خلال تتبع مراحل الطلبات والمنافسات، وتوضيح المسؤوليات ومواعيد التسليم",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/2833251c-6a2a-46d2-a3e6-2b4d689612d1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ddc19978-60e3-4d06-a355-38efd734b790&sourcetime=1759696442155",
-      beneficiary: "أعضاء فريق ادارة المشتريات",
+      beneficiary: "إدارة المشتريات",
     },
     {
       name: "نظام حلول الأعمال",
