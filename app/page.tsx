@@ -562,7 +562,7 @@ export default function MNGDPPortal() {
                         {dashboard.beneficiary && (
                           <div className="mt-3 flex items-center gap-2">
                             <span className="text-xs text-muted-foreground">
-                              المستفيد:
+                              المستفيدين:
                             </span>
                             <Badge>{dashboard.beneficiary}</Badge>
                           </div>
