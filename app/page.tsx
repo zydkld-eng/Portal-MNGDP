@@ -171,8 +171,8 @@ export default function MNGDPPortal() {
       icon: BarChart3,
       description:
         "نظام لمتابعة مؤشرات الأداء الرئيسية و رصد الفجوات و تسجيل الإنجازات الخاصة بالأداء ",
-      href: "",
-      beneficiary: "إدارة الاداء",
+      href: "https://bser.mngdp.com",
+      beneficiary: "إدارة الأداء",
     },
   ];
 
