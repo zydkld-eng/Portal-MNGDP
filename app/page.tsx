@@ -176,7 +176,7 @@ export default function MNGDPPortal() {
     },
   ];
 
-  // Power BI Dashboards
+  // Power BI Dashboards Links
   const dashboards: LinkItem[] = [
     {
       name: "National Guard Report Pack Long",
