@@ -65,6 +65,7 @@ type LinkItem = {
   description: string;
   href: string;
   beneficiary?: string; // ⬅️ single beneficiary
+  image?: string; // Optional image URL for modern card design
 };
 
 export default function MNGDPPortal() {
@@ -118,6 +119,7 @@ export default function MNGDPPortal() {
         "نظام يهدف إلى إدارة المشاريع ومتابعتها بشكل مؤتمت، يتيح لمدير المشروع رفع الطلبات اللازمة وتتبع التقدم حتى إتمام المشروع",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/6a835da0-59e3-4021-9ff6-03791d837ff8?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=2dac8b0c-3c22-470c-a5d5-19a8f822c5e0&sourcetime=1759311763362",
       beneficiary: "مدراء المشاريع",
+      image: "/Systems-img/PPP.png",
     },
     {
       name: "نظام التذاكر",
@@ -126,6 +128,7 @@ export default function MNGDPPortal() {
         "نظام يتيح رفع التذاكر ومتابعتها وتوجيهها تلقائيًا إلى الإدارة المختصة لمعالجتها",
       href: "https://tickets.mngdp.com/",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Systems-img/ts.png",
     },
     {
       name: "نظام إنجاز",
@@ -134,6 +137,7 @@ export default function MNGDPPortal() {
         "نظام لإدارة عمليات الموارد البشرية، يتيح للموظفين تقديم الإجازات والطلبات المختلفة، ويهدف إلى تسهيل الإجراءات الإدارية ورفع كفاءة العمل المؤسسي",
       href: "https://www.mngdp-erp.com/web/login",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Systems-img/Enjaz.png",
     },
     {
       name: "نظام إدارة المجالس",
@@ -142,6 +146,8 @@ export default function MNGDPPortal() {
         "نظام لتنظيم وإدارة المجالس واللجان وفرق العمل، وتسهيل تنسيق الاجتماعات وتوزيع المهام بفعالية",
       href: "https://mjls.tech/login/mngdp",
       beneficiary: "أعضاء مجالس برامج التحول",
+
+      image: "/Systems-img/mjls.png",
     },
     {
       name: "نظام خطة التفعيل",
@@ -157,6 +163,7 @@ export default function MNGDPPortal() {
         "نظام لإدارة المحافظ يضم أقسام رئيسية تشمل: التحكم، إدارة المخاطر، البوابات المرحلية، والتخطيط وإدارة الموارد",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/dfe1c119-9e93-4799-ba41-0a42de7e1836?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=a5ceb3ce-8062-4d9c-971c-4d1362c06890&sourcetime=1759312168219",
       beneficiary: "الإدارة العامة للمحافظ",
+      image: "/Systems-img/pmo-app.png",
     },
     {
       name: "منصة متابعة تدفقات المشاريع",
@@ -165,6 +172,7 @@ export default function MNGDPPortal() {
         "منصة لمتابعة الجوانب المالية ومخرجات المشاريع، بما يسهم في تحسين الرقابة المالية ودقة التقارير",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/3501ef08-2021-4ad6-93a9-3277877446af?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=1c561904-a8f5-4146-b0b3-5a28effb26da&sourcetime=1759696425694",
       beneficiary: "الإدارة المالية",
+      image: "/Systems-img/fin.png",
     },
     {
       name: "منصة الموائمة للتخطيط والمشتريات",
@@ -173,6 +181,7 @@ export default function MNGDPPortal() {
         "منصة تهدف إلى مواءمة المشتريات والتخطيط من خلال تتبع مراحل الطلبات والمنافسات، وتوضيح المسؤوليات ومواعيد التسليم",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/2833251c-6a2a-46d2-a3e6-2b4d689612d1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ddc19978-60e3-4d06-a355-38efd734b790&sourcetime=1759696442155",
       beneficiary: "إدارة المشتريات",
+      image: "/Systems-img/pps.png",
     },
     {
       name: "نظام حلول الأعمال",
@@ -181,6 +190,7 @@ export default function MNGDPPortal() {
         "نظام يعرض بيانات المشاريع ويساعد على تتبع التذاكر ومتابعة سير العمل ",
       href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/ac35b128-ddb3-4c24-831f-9dcd2e3dde55?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=fe2334ab-4643-456d-8fc9-f8c0238fe6cd&sourcetime=1759696472305",
       beneficiary: "الإدارة العامة للمحافظ",
+      image: "/Systems-img/bs.png",
     },
     {
       name: "نظام بصير",
@@ -189,6 +199,7 @@ export default function MNGDPPortal() {
         "نظام لمتابعة مؤشرات الأداء الرئيسية و رصد الفجوات و تسجيل الإنجازات الخاصة بالأداء ",
       href: "https://bser.mngdp.com",
       beneficiary: "إدارة الأداء",
+      image: "/Systems-img/bser.png",
     },
   ];
 
@@ -201,6 +212,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات تعرض الجدول الزمني للمشاريع، والمخرجات، ورُزم العمل، والمشاريع المستقبلية، والمخاطر، ومشاريع التفعيل",
       href: "https://app.powerbi.com/links/YsxLLECnne?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة العامة للمحافظ",
+      image: "/Dashboards-img/NGRPL.png",
     },
     {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan",
@@ -209,6 +221,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، والدور الاستراتيجي، وتحليل الاعتماديات، و البيانات المالية",
       href: "https://app.powerbi.com/links/QRofCQU7Zz?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Dashboards-img/TDP.png",
     },
     {
       name: "لوحة معلومات الإدارة العامة للمحافظ",
@@ -217,6 +230,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات لمتابعة بيانات المشاريع، رزم العمل، المهام، المخاطر، المخرجات، الموافقات، والدروس المستفادة",
       href: "https://app.powerbi.com/links/qDlw_dRfOD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة العامة للمحافظ",
+      image: "/Dashboards-img/ngrp.png",
     },
     {
       name: "لوحة معلومات متابعة مشاريع خطط التفعيل",
@@ -224,6 +238,7 @@ export default function MNGDPPortal() {
       description: "لوحة  معلومات تفاعلية لعرض ومتابعة سير عمل مشاريع التفعيل",
       href: "https://app.powerbi.com/links/20AGKY-Vn0?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare&bookmarkGuid=bbfb8166-6240-45ca-945f-2771d6df310",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Dashboards-img/actdash.png",
     },
     {
       name: "Supply & Demand Resources",
@@ -232,6 +247,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات لمتابعة وتوازن العرض والطلب على الموارد، وتحليل توفرها مقابل احتياجات المشاريع",
       href: "https://app.powerbi.com/links/jjNuQ5CIpF?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة العامة للمحافظ",
+      image: "/Dashboards-img/sd.png",
     },
     {
       name: "لوحة معلومات الخطة التفصيلية للتحول - Transformation Detailed Plan Live",
@@ -240,6 +256,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات متكاملة تعرض خطة التحول، وبرامجها ومبادراتها، ومخرجاتها ، و النتائج المستهدفة و التكاليف المالية بالاعتماد على بيانات مباشرة",
       href: "https://app.powerbi.com/links/4cgkvB7GKb?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة العامة للمحافظ",
+      image: "/Dashboards-img/tdplive.png",
     },
     {
       name: "لوحة معلومات مركز إدارة التحول - Transformation Management Centre",
@@ -248,6 +265,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات شاملة تجمع الخطة التفصيلية، النموذج التشغيلي، وإدارة التغيير لتسهيل المتابعة وتعزيز التكامل",
       href: "https://app.powerbi.com/links/DQX1TEGNFD?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Dashboards-img/tmc.png",
     },
     {
       name: "لوحة معلومات إدراة التغيير  - Change",
@@ -256,6 +274,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات توضح مؤشرات التغيير على مستوى الإدارات، وأثر تغيير البرامج على القطاعات، ودرجة تحمل الإدارات، بشكل مترابط يدعم التقييم واتخاذ القرار",
       href: "https://app.powerbi.com/links/yfGvUaUEaS?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Dashboards-img/change.png",
     },
     {
       name: "النموذج التشغيلي المستهدف  - Tareget Operating Model",
@@ -264,6 +283,7 @@ export default function MNGDPPortal() {
         "لوحة معلومات تعرض النموذج التشغيلي على المستوى المؤسسي وتقيس أدائه بشكل دقيق",
       href: "https://app.powerbi.com/links/rNJPjJGxy3?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "جميع منسوبي البرنامج",
+      image: "/Dashboards-img/tom.png",
     },
     {
       name: "لوحة معلومات المعاملات الإدارية",
@@ -272,6 +292,7 @@ export default function MNGDPPortal() {
         "لوحة متابعة حالة المعاملات الإدارية لنواب المدير العام التنفيذي",
       href: "https://app.powerbi.com/links/5vFP_vb8vg?ctid=859f050e-9731-4556-aab4-683a27e7fa1b&pbi_source=linkShare",
       beneficiary: "الإدارة التنفيذية للبرنامج",
+      image: "/Dashboards-img/vps.png",
     },
   ];
 
@@ -435,12 +456,12 @@ export default function MNGDPPortal() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-3xl mx-auto">
               <Card
-                className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border-2 hover:border-primary/50"
+                className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border-2 hover:border-primary/50 hover:bg-primary/5"
                 onClick={() => setCurrentView("systems")}
               >
                 <CardHeader className="text-center p-8">
-                  <div className="mx-auto w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                    <Settings className="w-10 h-10 text-primary" />
+                  <div className="mx-auto w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 border-2 border-transparent group-hover:border-primary/50 transition-all duration-300">
+                    <Settings className="w-10 h-10 text-primary/30 group-hover:text-primary transition-colors duration-300" />
                   </div>
                   <CardTitle className="text-xl lg:text-2xl text-primary mb-4">
                     الأنظمة
@@ -457,12 +478,12 @@ export default function MNGDPPortal() {
               </Card>
 
               <Card
-                className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border-2 hover:border-secondary/50"
+                className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border-2 hover:border-secondary/50 hover:bg-secondary/5"
                 onClick={() => setCurrentView("dashboards")}
               >
                 <CardHeader className="text-center p-8">
-                  <div className="mx-auto w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary/20 transition-colors">
-                    <BarChart3 className="w-10 h-10 text-secondary" />
+                  <div className="mx-auto w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-secondary/20 border-2 border-transparent group-hover:border-secondary/50 transition-all duration-300">
+                    <BarChart3 className="w-10 h-10 text-secondary/30 group-hover:text-secondary transition-colors duration-300" />
                   </div>
                   <CardTitle className="text-xl lg:text-2xl text-secondary mb-4">
                     لوحات المعلومات
@@ -495,39 +516,52 @@ export default function MNGDPPortal() {
               {systems.map((system, index) => (
                 <Card
                   key={index}
-                  className="group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] h-full flex flex-col"
+                  className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:bg-primary/5 h-full flex flex-col overflow-hidden border-primary/20 hover:border-primary/40 p-0"
                 >
-                  <CardHeader className="p-6">
-                    <div className="flex items-start gap-5">
-                      <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
-                        <system.icon className="w-7 h-7 text-primary" />
+                  {/* Image section - modern design with top accent */}
+                  {system.image ? (
+                    <div className="relative w-full h-56 overflow-hidden border-b-4 border-primary bg-gradient-to-br from-primary/5 to-primary/10 rounded-t-xl">
+                      <Image
+                        src={system.image}
+                        alt={system.name}
+                        fill
+                        className="object-cover transition-all duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = "none";
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    // Fallback icon section if no image
+                    <div className="p-8 pb-6 border-b-4 border-primary">
+                      <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors mx-auto">
+                        <system.icon className="w-8 h-8 text-primary" />
                       </div>
-                      <div className="min-w-0 flex-1 space-y-2">
-                        <CardTitle className="text-lg sm:text-xl leading-tight">
-                          {system.name}
-                        </CardTitle>
-                        <CardDescription className="text-sm sm:text-base leading-relaxed">
-                          <span className="font-medium">الوصف:</span>{" "}
-                          {system.description}
-                        </CardDescription>
+                    </div>
+                  )}
+                  <CardHeader className="p-6 pb-4">
+                    <div className="space-y-3 text-center">
+                      <CardTitle className="text-xl sm:text-2xl leading-tight font-bold text-primary">
+                        {system.name}
+                      </CardTitle>
+                      <CardDescription className="text-sm sm:text-base leading-relaxed text-muted-foreground">
+                        {system.description}
+                      </CardDescription>
 
-                        {/* المستفيد */}
-                        {system.beneficiary && (
-                          <div className="mt-3 flex items-center gap-2">
-                            <span className="text-xs text-muted-foreground">
-                              المستفيدين:
-                            </span>
-                            <Badge>{system.beneficiary}</Badge>
-                          </div>
-                        )}
-                      </div>
+                      {/* المستفيد */}
+                      {system.beneficiary && (
+                        <div className="mt-4 flex items-center justify-center gap-2">
+                          <Badge>{system.beneficiary}</Badge>
+                        </div>
+                      )}
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 pt-0 mt-auto">
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full h-12 text-base font-medium text-primary hover:bg-primary hover:text-white hover:border-primary"
+                      className="w-full h-12 text-base font-semibold text-primary border-primary/30 hover:bg-primary hover:text-white hover:border-primary transition-all"
                     >
                       <a
                         href={system.href}
@@ -558,41 +592,54 @@ export default function MNGDPPortal() {
               {dashboards.map((dashboard, index) => (
                 <Card
                   key={index}
-                  className="group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] h-full flex flex-col"
+                  className="group cursor-pointer transition-all duration-300 hover:shadow-xl hover:scale-[1.02] hover:bg-secondary/5 h-full flex flex-col overflow-hidden border-secondary/20 hover:border-secondary/40 p-0"
                 >
-                  <CardHeader className="p-6">
-                    <div className="flex items-start gap-5">
-                      <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors flex-shrink-0">
-                        <dashboard.icon className="w-7 h-7 text-secondary" />
+                  {/* Image section - modern design with top accent */}
+                  {dashboard.image ? (
+                    <div className="relative w-full h-56 overflow-hidden border-b-4 border-secondary bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-t-xl">
+                      <Image
+                        src={dashboard.image}
+                        alt={dashboard.name}
+                        fill
+                        className="object-cover transition-all duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = "none";
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    // Fallback icon section if no image
+                    <div className="p-8 pb-6 border-b-4 border-secondary">
+                      <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center group-hover:bg-secondary/20 transition-colors mx-auto">
+                        <dashboard.icon className="w-8 h-8 text-secondary" />
                       </div>
-                      <div className="min-w-0 flex-1 space-y-2">
-                        <CardTitle className="text-lg sm:text-xl leading-tight">
-                          {dashboard.name}
-                        </CardTitle>
-                        <CardDescription className="text-sm sm:text-base leading-relaxed">
-                          <span className="font-medium">الوصف:</span>{" "}
-                          {dashboard.description}
-                        </CardDescription>
+                    </div>
+                  )}
+                  <CardHeader className="p-6 pb-4">
+                    <div className="space-y-3 text-center">
+                      <CardTitle className="text-xl sm:text-2xl leading-tight font-bold text-secondary">
+                        {dashboard.name}
+                      </CardTitle>
+                      <CardDescription className="text-sm sm:text-base leading-relaxed text-muted-foreground">
+                        {dashboard.description}
+                      </CardDescription>
 
-                        {/* المستفيد */}
-                        {dashboard.beneficiary && (
-                          <div className="mt-3 flex items-center gap-2">
-                            <span className="text-xs text-muted-foreground">
-                              المستفيدين:
-                            </span>
-                            <Badge variant="secondary">
-                              {dashboard.beneficiary}
-                            </Badge>
-                          </div>
-                        )}
-                      </div>
+                      {/* المستفيد */}
+                      {dashboard.beneficiary && (
+                        <div className="mt-4 flex items-center justify-center gap-2">
+                          <Badge variant="secondary">
+                            {dashboard.beneficiary}
+                          </Badge>
+                        </div>
+                      )}
                     </div>
                   </CardHeader>
                   <CardContent className="p-6 pt-0 mt-auto">
                     <Button
                       asChild
                       variant="outline"
-                      className="w-full h-12 bg-transparent text-base font-medium"
+                      className="w-full h-12 text-base font-semibold text-secondary border-secondary/30 hover:bg-secondary hover:text-white hover:border-secondary transition-all"
                     >
                       <a
                         href={dashboard.href}
