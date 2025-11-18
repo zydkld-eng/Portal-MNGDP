@@ -146,15 +146,15 @@ export default function MNGDPPortal() {
         "نظام لتنظيم وإدارة المجالس واللجان وفرق العمل، وتسهيل تنسيق الاجتماعات وتوزيع المهام بفعالية",
       href: "https://mjls.tech/login/mngdp",
       beneficiary: "أعضاء مجالس برامج التحول",
-
       image: "/Systems-img/mjls.png",
     },
     {
       name: "نظام خطة التفعيل",
       icon: ClipboardCheck,
       description: "نظام لمتابعة سير عمل مشاريع التفعيل بشكل مباشر وفعّال ",
-      href: "https://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/21840821-01f4-40da-9f27-f9a9feed1d19?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&hint=ef0a2f93-5591-4e56-8de5-d22cb295f174&sourcetime=1758440126051",
+      href: "http://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/32358f6e-48ec-4392-9763-f2720fc2c8a1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&amp;hint=2daf0313-4798-4fbb-b4c7-14e218c36977&amp;sourcetime=1762078861158&source=teamsLinkUnfurling",
       beneficiary: "مدراء مشاريع التفعيل",
+      image: "/Systems-img/ap.png",
     },
     {
       name: "نظام الإدارة العامة للمحافظ",
