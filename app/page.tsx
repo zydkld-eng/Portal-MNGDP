@@ -149,7 +149,7 @@ export default function MNGDPPortal() {
       image: "/Systems-img/mjls.png",
     },
     {
-      name: "نظام خطة التفعيل",
+      name: "نظام متابعة خطط التفعيل",
       icon: ClipboardCheck,
       description: "نظام لمتابعة سير عمل مشاريع التفعيل بشكل مباشر وفعّال ",
       href: "http://apps.powerapps.com/play/e/default-859f050e-9731-4556-aab4-683a27e7fa1b/a/32358f6e-48ec-4392-9763-f2720fc2c8a1?tenantId=859f050e-9731-4556-aab4-683a27e7fa1b&amp;hint=2daf0313-4798-4fbb-b4c7-14e218c36977&amp;sourcetime=1762078861158&source=teamsLinkUnfurling",
